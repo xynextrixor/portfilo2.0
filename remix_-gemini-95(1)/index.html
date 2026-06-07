@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AnmolOS - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/genai": "https://esm.sh/@google/genai@0.7.0",
+          "@tailwindcss/browser": "https://esm.sh/@tailwindcss/browser@^4.1.3"
+        }
+      }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div class="desktop" id="desktop">
+      <!-- Desktop Icons -->
+      <div class="icon" data-app="about">
+        <img src="https://win98icons.alexmeub.com/icons/png/notepad-0.png" alt="About" />
+        <span>About.txt</span>
+      </div>
+      <div class="icon" data-app="projects">
+        <img src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-4.png" alt="Projects" />
+        <span>Projects</span>
+      </div>
+      <div class="icon" data-app="chrome">
+        <img src="https://storage.googleapis.com/gemini-95-icons/chrome-icon-2.png" alt="Web" />
+        <span>Web</span>
+      </div>
+      <div class="icon" data-app="contact">
+        <img src="https://win98icons.alexmeub.com/icons/png/envelope_closed-0.png" alt="Contact" />
+        <span>Contact.exe</span>
+      </div>
+
+      <!-- Windows -->
+      <div class="window resizable" id="projects" style="width: 450px; height: 300px;">
+        <div class="window-titlebar">
+          <span class="window-title">Projects</span>
+          <div class="window-controls">
+            <div class="window-minimize window-control-button">−</div>
+            <div class="window-close window-control-button">✕</div>
+          </div>
+        </div>
+        <div class="window-content" style="background-color: white">
+          <div style="padding: 10px; display: flex; flex-wrap: wrap;">
+            <a href="https://github.com/anmolsin1124?tab=repositories" target="_blank" style="text-decoration: none;">
+              <div class="window-icon">
+                <img src="https://win98icons.alexmeub.com/icons/png/console_prompt-0.png" alt="PDF Tools Suite" />
+                <span style="color: black;">PDF Tools</span>
+              </div>
+            </a>
+            <a href="https://github.com/anmolsin1124?tab=repositories" target="_blank" style="text-decoration: none;">
+              <div class="window-icon">
+                <img src="https://win98icons.alexmeub.com/icons/png/console_prompt-0.png" alt="Local Jarvis" />
+                <span style="color: black;">Local Jarvis</span>
+              </div>
+            </a>
+            <a href="https://github.com/anmolsin1124?tab=repositories" target="_blank" style="text-decoration: none;">
+              <div class="window-icon">
+                <img src="https://win98icons.alexmeub.com/icons/png/console_prompt-0.png" alt="WhatsApp Bot" />
+                <span style="color: black;">WhatsApp Bot</span>
+              </div>
+            </a>
+            <a href="https://github.com/anmolsin1124?tab=repositories" target="_blank" style="text-decoration: none;">
+              <div class="window-icon">
+                <img src="https://win98icons.alexmeub.com/icons/png/console_prompt-0.png" alt="Game Engine" />
+                <span style="color: black;">Game Engine</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="window resizable" id="chrome" style="width: 800px; height: 600px;">
+        <div class="window-titlebar">
+          <span class="window-title">Chrome</span>
+          <div class="window-controls">
+            <div class="window-minimize window-control-button">−</div>
+            <div class="window-close window-control-button">✕</div>
+          </div>
+        </div>
+        <div class="window-content" style="padding: 0;">
+          <iframe
+            id="browser-frame"
+            src="https://anmolprofile.vercel.app/"
+            width="100%"
+            height="100%"
+            style="border: none; display: block;"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="window resizable" id="about">
+        <div class="window-titlebar">
+          <span class="window-title">About.txt - Notepad</span>
+          <div class="window-controls">
+            <div class="window-minimize window-control-button">−</div>
+            <div class="window-close window-control-button">✕</div>
+          </div>
+        </div>
+        <div class="window-content" style="padding: 0;">
+          <textarea
+            class="notepad-textarea"
+            style="
+              width: 100%;
+              height: 100%;
+              border: none;
+              outline: none;
+              resize: none;
+              background-color: white;
+              padding: 5px;
+              font-family: 'Courier New', Courier, monospace;
+            "
+            readonly
+          >
+ANMOL SINGH
+DATA SCIENCE ENGINEER
+=====================
+
+B.Tech Data Science Student | Future AI Engineer | Full Stack Developer
+Python • C++ • React • AI
+
+I am Anmol Singh, a B.Tech Data Science student passionate about building intelligent systems and modern web applications. I focus on combining software development with artificial intelligence to create useful real-world solutions.
+
+EDUCATION
+---------
+Pursuing Bachelors of Technology with specialization in Data Science.
+Focusing on core Computer Science concepts, Algorithms, and System Design.
+
+TECH STACK
+----------
+Python, C++, React, AI, Machine Learning, Data Processing.
+          </textarea>
+        </div>
+      </div>
+
+      <div class="window resizable" id="contact" style="width: 300px; height: 200px;">
+        <div class="window-titlebar">
+          <span class="window-title">Contact.exe</span>
+          <div class="window-controls">
+            <div class="window-minimize window-control-button">−</div>
+            <div class="window-close window-control-button">✕</div>
+          </div>
+        </div>
+        <div class="window-content" style="display: flex; flex-direction: column; padding: 20px; align-items: center; justify-content: center; background-color: #ECE9D8;">
+            <p style="font-weight: bold; margin-bottom: 20px; font-size: 1.2rem;">Let's Talk Code.</p>
+            <a href="mailto:anmolsin1124@gmail.com" style="width: 100%; max-width: 200px; margin-bottom: 10px;"><button style="width: 100%; padding: 8px; cursor: pointer; border-radius: 4px; border: 1px solid #888;">Email: anmolsin1124@gmail.com</button></a>
+            <a href="https://github.com/anmolsin1124" target="_blank" style="width: 100%; max-width: 200px; margin-bottom: 10px;"><button style="width: 100%; padding: 8px; cursor: pointer; border-radius: 4px; border: 1px solid #888;">GitHub</button></a>
+            <a href="https://www.linkedin.com/in/anmol1992" target="_blank" style="width: 100%; max-width: 200px;"><button style="width: 100%; padding: 8px; cursor: pointer; border-radius: 4px; border: 1px solid #888;">LinkedIn</button></a>
+        </div>
+      </div>
+
+
+      <!-- Start Menu -->
+      <div class="start-menu" id="start-menu">
+        <div style="background: linear-gradient(to right, #0058e6 0%, #127dff 100%); color: white; padding: 10px; font-weight: bold; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
+          <img src="https://win98icons.alexmeub.com/icons/png/user_computer-0.png" style="width: 32px; height: 32px; border: 2px solid white; border-radius: 4px;" />
+          Anmol Singh
+        </div>
+        <div style="padding: 5px; display: flex; flex-direction: column; gap: 2px;">
+          <div class="start-menu-item" data-app="projects">
+            <img src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-4.png" style="width: 24px; height: 24px;" />
+            Projects
+          </div>
+          <div class="start-menu-item" data-app="chrome">
+            <img src="https://storage.googleapis.com/gemini-95-icons/chrome-icon-2.png" style="width: 24px; height: 24px;" />
+            Web
+          </div>
+          <div class="start-menu-item" data-app="about">
+            <img src="https://win98icons.alexmeub.com/icons/png/notepad-0.png" style="width: 24px; height: 24px;" />
+            About.txt
+          </div>
+          <div style="border-top: 1px solid #CCC; margin: 5px 0;"></div>
+          <div class="start-menu-item" data-app="contact">
+            <img src="https://win98icons.alexmeub.com/icons/png/envelope_closed-0.png" style="width: 24px; height: 24px;" />
+            Contact
+          </div>
+        </div>
+      </div>
+
+      <!-- Taskbar -->
+      <div id="taskbar">
+        <button id="start-button">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Windows_logo_-_2001.svg"
+            alt="Start"
+            style="width: 20px; height: 20px;"
+          />
+          <span style="font-style: italic;">start</span>
+        </button>
+        <div id="taskbar-apps">
+        </div>
+      </div>
+    </div>
+  <script type="module" src="/index.ts"></script>
+</body>
+</html>

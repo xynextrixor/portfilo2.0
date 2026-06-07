@@ -1,0 +1,8 @@
+{
+  "name": "Anmol OS - Retro Portfolio",
+  "description": "A Windows 95 style personal portfolio for Anmol Singh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
